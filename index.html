@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1 id="title">Survey Form</h1>
+        </div>
+        <div id="formSheet">
+            <p id="description">Please let us know how we can improve</p>
+            <form id="survey-form" action="/submit-survey-form">
+
+                <div id="nameField">
+                    <label id="name-label" for="name"><span>*</span>Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div id="emailField">
+                    <label id="email-label" for="email"><span>*</span>Email:</label>
+                    <input type="email" id="email" placeholder="Enter your Email" required>
+                </div>
+
+                <div id="numberField">
+                    <label id="number-label" for="number"><span>*</span>Age:</label>
+                    <input type="number" name="age" id="number" min="13" max="99" placeholder="Age" required>
+                </div>
+
+                <div id="POS">
+                    <label for="currentPOS">Which option best describes your current role?</label>
+                    <select id="dropdown" name="currentPOS">
+                        <option disabled value>Select an option</option>
+                        <option value="Student">Student</option>
+                        <option value="Full-Time-Job">Full Time Job</option>
+                        <option value="Retired">Retired</option>
+                        <option value="Prefer-not-to-say">Prefer not to say</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div id="recommendChoices">
+                    <fieldset id="recommendation">
+                        <legend>How likely is it that you would recommend us to a friend?</legend>
+                        <input id="def" name="recommend" type="radio" value="definitely">
+                        <label for="recommend">Definitely</label>
+                        <input id="may" name="recommend" type="radio" value="maybe">
+                        <label for="recommend">Maybe</label>
+                        <input id="no" name="recommend" type="radio" value="notSure">
+                        <label for="recommend">Not sure</label>
+                    </fieldset>
+                </div>
+
+                <div id="improvementChoices">
+                    <fieldset id="improvement">
+                        <legend>Things that could be improved in the future: </legend>
+                        <input type="checkbox" value="Be-Nicer" name="improvement">
+                        <label for="improvement">Be nicer</label>
+                        <input type="checkbox" value="work-harder" name="improvement">
+                        <label for="improvement">Work harder</label>
+                        <input type="checkbox" value="calm-down" name="improvement">
+                        <label for="improvement">Calm down during calls</label>
+                    </fieldset>
+                </div>
+
+                <div id="commentBox">
+                    <label for="comments" id="commentLabel">Any Comments or Suggestions?</label>
+                    <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div id="submitButtonArea">
+                    <button id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+body{
+    background-color: dodgerblue;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+}
+#header{
+    align-self: center;
+    font-size: 2.6rem;
+}
+#formSheet{
+    background-color: white;
+    align-self: center;
+    padding: 1.0rem;
+    font-size: 1.3rem;
+    border: 2px solid black;
+}
+#title{
+    color: white;
+    margin: .5rem
+}
+#description{
+    text-align: center;
+}
+span{
+    color: red;
+    margin-right: .5rem;
+}
+#nameField, #emailField, #numberField, #POS, #recommendedChoices, #commentBox, #submitButtonArea{
+    display: flex;
+    flex-direction: row;
+    margin: 1.0rem 2.0rem;
+    align-items: center;
+}
+#POS{
+    flex-direction: column;
+    align-items: flex-start
+}
+#dropdown{
+    padding: .3rem;
+    margin: .5rem 0rem;
+    width: 27.5rem;
+}
+#improvementChoices{
+    width: 100%;
+}
+#commentBox{
+    flex-direction: column;
+}
+textarea{
+    margin-top: 1.1rem;
+    height: 9.4rem;
+    width: 100%;
+    justify-self: flex-end;
+}
+#improvementChoices{
+    margin-top: 1.0rem;
+}
+#recommendation, #improvement{
+    width: 80%;
+    margin-left: 1.0rem;
+}
+
+
+
